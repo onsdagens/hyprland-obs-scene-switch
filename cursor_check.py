@@ -1,10 +1,8 @@
 import subprocess
 import obspython as S
-import os
 
 def script_tick(seconds):
     output = subprocess.check_output("./.cursorcheck.sh")
-    print(os.getcwd())
 
     position = output.split(b",")
 
